@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+url = ""
+verify_ssl = false
+name = 'n_pypi'
+
+[dev-packages]
+twine="*"
+
+[packages]
+socutils = {version= "==1.5.9", index="n_pypi"}
+
+[requires]
+python_version = "3.6"
